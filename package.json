@@ -1,0 +1,44 @@
+{
+  "name": "neville-li.github.io",
+  "version": "1.0.0",
+  "description": "Neville Li's portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "live-server --watch=public --entry-file=index.html",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neville-li/neville-li.github.io.git"
+  },
+  "author": "Neville Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neville-li/neville-li.github.io/issues"
+  },
+  "homepage": "https://github.com/neville-li/neville-li.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "live-server": "^1.2.1",
+    "normalize.css": "^8.0.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.12",
+    "@fortawesome/free-solid-svg-icons": "^5.6.3",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "css-loader": "^2.1.0",
+    "i": "^0.3.6",
+    "node-sass": "^4.11.0",
+    "npm": "^6.6.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
+  }
+}
