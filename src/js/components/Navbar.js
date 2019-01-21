@@ -1,14 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import toggleNavbar from "./../utils/toggleNavbar";
 
 class Navbar extends React.Component {
 
-
-    toggleNavbar() {    
-        const navbar  = document.querySelector(".nav__navbar");
-        const nav = document.querySelector(".nav");
-        navbar.style.top = `${nav.clientHeight}px`;
-        navbar.style.display = navbar.style.display !== "flex" ? "flex" : "none";
+    toggleNavbar() {
+        toggleNavbar();
     }
     render() {
         return (
