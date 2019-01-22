@@ -27,7 +27,7 @@
     }
 
     &__navbar {
-        display:none;
+        display:flex;
         flex-direction: column;
         list-style: none;
         position: fixed;
@@ -35,6 +35,8 @@
         right: 0;
         bottom: 0;
         background: white;
+        transition: transform 0.2s;
+        transform: translateX(100%);
         
         &__item {
             font-size: $sm-size;
@@ -53,6 +55,7 @@
             width: 30%;
            
             display: flex !important;
+            transform: translateX(0%) !important;
             flex-direction: row;
             position: static;
             justify-content: center;

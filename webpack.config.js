@@ -7,6 +7,9 @@ module.exports = {
         filename: "bundle.js"
     },
     devtool: "cheap-eval-source-map",
+    devServer: {
+        contentBase: path.join(__dirname, "public")
+    },
     module: {
         rules: [
             {

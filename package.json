@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-server": "live-server --watch=public --entry-file=index.html",
+    "dev-server": "webpack-dev-server",
     "build": "webpack --watch"
   },
   "repository": {
@@ -24,10 +24,10 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "file-loader": "^3.0.1",
-    "live-server": "^1.2.1",
     "normalize.css": "^8.0.1",
     "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",
@@ -36,7 +36,6 @@
     "css-loader": "^2.1.0",
     "i": "^0.3.6",
     "node-sass": "^4.11.0",
-    "npm": "^6.6.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "sass-loader": "^7.1.0",
