@@ -1,0 +1,28 @@
+.project {
+    max-width: 35rem;
+    height: 200px;
+    border: black 1px solid;
+    text-align: center;
+    padding: $md-size;
+}
+
+@media (min-width: $mobile-size) {
+    .project {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $tablet-size) {
+    .project {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $desktop-size) {
+    .project {
+        width: 30%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,23 @@
+.projects {
+    padding-top: $sm-size;
+    padding-bottom: $section-padding;
+    text-align: center;
+
+    &__display {
+        padding-top: $sm-size;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+}
+
+@media(min-width: $tablet-size) {
+    .projects {
+        &__display {
+            padding-top: $xxl-size;
+            flex-direction: row;
+            background: white;
+        }
+    }
+}
+

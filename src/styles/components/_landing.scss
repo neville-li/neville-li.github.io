@@ -1,8 +1,8 @@
 .landing {
     text-align: center;
-    padding-top: $section-padding;
-    padding-bottom: $section-padding;
-    border: green 1px solid;
+    padding-top: $xxl-size;
+    padding-bottom: $xxl-size;
+    border: black 1px solid;
 
     &__avatar {
         
@@ -14,9 +14,14 @@
         &__canvas {
             position: absolute;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%);
         }
     }
+}
 
-    
+@media(min-width: $tablet-size) {
+    .landing {
+        padding-top: $section-padding;
+        padding-bottom: $section-padding;
+    }
 }
