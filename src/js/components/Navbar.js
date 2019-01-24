@@ -1,11 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import toggleNavbar from "./../utils/toggleNavbar";
+import {toggle} from "../utils/navbarUtils";
 
 class Navbar extends React.Component {
 
+    componentDidMount(){
+        console.log(document.querySelector(".nav__navbar"))
+    }
+
     toggleNavbar() {
-        toggleNavbar();
+        toggle();
     }
     render() {
         return (
