@@ -5,7 +5,7 @@ const Contact = () => (
         <h1>Contact</h1>
 
         <div>
-            <h2>Leave me a message!(Currently not working)</h2>
+            <h2>Leave me a message!(Currently not available)</h2>
             <form method="POST">
                 <label className="contact__label">
                     Title:
@@ -19,7 +19,7 @@ const Contact = () => (
                     Your Email(Optional):
                     <input type="text"/>
                 </label>
-            <button>Submit</button>
+            <button disabled={true}>Submit</button>
             </form>
         </div>
         
