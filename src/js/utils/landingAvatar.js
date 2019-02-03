@@ -92,11 +92,6 @@ const landingAvatar = () => {
             mouse.y = Math.abs(canvas.offsetTop - e.y - canvas.height/2);
         });
 
-        window.onclick = () => {
-            console.log(mouse.x, mouse.y);
-            console.log(`LeftX ${leftEyeX}`);
-        }
-
         function animate() {
             requestAnimationFrame(animate);
             c.clearRect(0, 0, w, h);

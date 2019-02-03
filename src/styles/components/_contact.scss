@@ -1,3 +1,10 @@
 .contact {
     text-align: center;
+    border: 1px black solid;
+    font-size: 1.6rem;
+
+    &__label {
+        display: block;
+        margin-top: 1rem;
+    }
 }

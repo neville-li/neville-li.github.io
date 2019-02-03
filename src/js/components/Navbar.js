@@ -4,10 +4,6 @@ import {toggle} from "../utils/navbarUtils";
 
 class Navbar extends React.Component {
 
-    componentDidMount(){
-        console.log(document.querySelector(".nav__navbar"))
-    }
-
     toggleNavbar() {
         toggle();
     }
