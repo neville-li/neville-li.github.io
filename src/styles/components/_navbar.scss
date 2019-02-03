@@ -36,7 +36,7 @@
         &__item {
             font-size: $sm-size;
             padding-left: 0;
-            padding: $sm-size $lg-size $sm-size $xs-size;
+            padding: $sm-size;
             border: 1px solid #999999;
         }
     }
@@ -56,9 +56,10 @@
             flex-direction: row !important;
             transform: translateX(0%);
             position: static;
-            justify-content: center;
+            justify-content: flex-end;
             border: none;
-
+            margin-left: auto;
+        
             &__brand {
                 margin: $xs-size;
             }
@@ -66,8 +67,8 @@
             &__item {
                 border: none;
                 font-size: $sm-size;
-                margin: 0;
-                padding: 0 $sm-size;
+                margin:  0 0 0 $md-size;
+                padding: 0;
             }
         }
 
