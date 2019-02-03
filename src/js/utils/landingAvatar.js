@@ -49,19 +49,6 @@ const landingAvatar = () => {
         }
         update() {
 
-
-            // if(mouse.x > this.relX) {
-            //     this.x = this.x + this.radius * 3;
-            //     if(this.x > this.centerX + eyeRadius) {
-            //         this.x = this.centerX + eyeRadius - this.radius;
-            //     }
-            // }
-            // if(mouse.x < this.relX) {
-            //     this.x = this.x - this.radius * 3;
-            //     if(this.x < this.centerX + eyeRadius) {
-            //         this.x = this.centerX - eyeRadius + this.radius;
-            //     }
-            // }
             if(mouse.y > this.relY) {
                 this.y = this.y + this.radius * 3;
                 if(this.y > this.centerY + eyeRadius) {

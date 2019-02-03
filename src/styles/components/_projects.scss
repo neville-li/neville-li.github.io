@@ -1,23 +1,19 @@
 .projects {
-    padding-top: $sm-size;
+    padding-top: $md-size;
     padding-bottom: $section-padding;
     text-align: center;
-
+    
+    border: 1px black solid;
     &__display {
-        padding-top: $sm-size;
+        padding-top: $section-padding;
         display: flex;
         align-items: center;
-        flex-flow: column;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
-@media(min-width: $tablet-size) {
-    .projects {
-        &__display {
-            padding-top: $xxl-size;
-            flex-direction: row;
-            background: white;
-        }
-    }
-}
+
+
 

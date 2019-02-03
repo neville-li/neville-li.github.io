@@ -6,9 +6,13 @@ module.exports = {
         path: path.join(__dirname, "public"),
         filename: "bundle.js"
     },
+    mode: "development",
     devtool: "cheap-eval-source-map",
     devServer: {
         contentBase: path.join(__dirname, "public")
+    },
+    watchOptions: {
+        ignored: /node_modules/
     },
     module: {
         rules: [
