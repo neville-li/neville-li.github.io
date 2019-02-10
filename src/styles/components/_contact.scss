@@ -5,6 +5,22 @@
 
     &__label {
         display: block;
-        margin-top: 1rem;
+        margin: 1rem auto;
+        display:block;
+    }
+    &__input {
+        display: block;
+        margin: 1rem auto;
+        display:block;
+    }
+    &__message {
+        display: block;
+        margin: 1rem auto;
+        display:block;
+    }
+    &__button {
+        display: block;
+        display: block;
+        margin: 1rem auto;
     }
 }
