@@ -10,7 +10,7 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className="nav">
-                <h1 className="nav__brand">Neville Li</h1>
+                <h1 className="nav__brand">Neville Li(Porfolio in development)</h1>
                 <button 
                     onClick={this.toggleNavbar}
                     className="nav__toggleButton"

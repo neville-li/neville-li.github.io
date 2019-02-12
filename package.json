@@ -5,8 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-server": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "webpack-dev-server": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js",
+    "start-express-server": "nodemon server/app.js",
+    "start": "node server/app.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "file-loader": "^3.0.1",
+    "nodemon": "^1.18.10",
     "normalize.css": "^8.0.1",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
@@ -34,9 +37,13 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.12",
     "@fortawesome/free-solid-svg-icons": "^5.6.3",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "css-loader": "^2.1.0",
+    "express": "^4.16.4",
     "i": "^0.3.6",
     "node-sass": "^4.11.0",
+    "nodemailer": "^5.1.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "sass-loader": "^7.1.0",
