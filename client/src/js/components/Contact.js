@@ -7,7 +7,7 @@ const Contact = () => {
             <h1>Contact</h1>
     
             <div>
-                <h2>Leave me a message!(Currently not available)</h2>
+                <h2>Leave me a message!</h2>
                 <form onSubmit={
                     (e) => {
                         e.preventDefault();

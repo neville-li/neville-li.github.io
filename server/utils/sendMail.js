@@ -17,7 +17,7 @@ const sendMail = async ({subject, sender, text, senderEmail}) => {
         html: `
             <p>Hi, ${sender}</p>
             <p>This is a confirmation email that I have recieved your email, and I will get back to you as soon as possible</p>
-            <small>This is an This is an auto-generated email by github.io/neville-li. NO REPLY</small>
+            <small>This is an This is an auto-generated email by github.io/neville-li. NO REPLY.</small>
             <small>To get in touch with me, please email me at neville.s.li@hotmail.com</small>
             <hr>
             <h3>Subject: ${subject}</h3>
