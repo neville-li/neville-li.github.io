@@ -17,6 +17,7 @@ const Contact = () => {
                             body: JSON.stringify({
                                 subject: e.target.elements.subject.value,
                                 sender: e.target.elements.sender.value,
+                                senderEmail: e.target.elements.senderEmail.value,
                                 text: e.target.elements.text.value
                             }),
                             headers:{
@@ -29,6 +30,7 @@ const Contact = () => {
                         e.target.elements.subject.value = '';
                         e.target.elements.sender.value = '';
                         e.target.elements.text.value = '';
+                        e.target.elements.senderEmail.value = '';
                     }
                 }>
                     <input
@@ -39,11 +41,19 @@ const Contact = () => {
                         id="subject"
                     />
                     <input
-                        className="contact__input"
+                        className="contact__input"    
                         type="text"
-                        placeholder="Your email(Optional)"
+                        placeholder="Your name"
                         name="sender"
                         id="sender"
+                    />
+                    <input
+                        className="contact__input"
+                        type="email"
+                        placeholder="Your email(required)"
+                        name="senderEmail"
+                        id="senderEmail"
+                        required
                     />
                     <textarea
                         className="contact__message"
@@ -51,7 +61,7 @@ const Contact = () => {
                         name="text"
                         id="text"
                     />  
-                    <button disabled={true}>
+                    <button>
                         Submit
                     </button>
                 </form>

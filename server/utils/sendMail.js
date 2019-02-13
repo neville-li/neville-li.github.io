@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 
-const sendMail = async ({subject, sender, text}) => {
+const sendMail = async ({subject, sender, text, senderEmail}) => {
 
     const transporter = nodemailer.createTransport ({
         host: "outlook.com",
@@ -12,12 +12,17 @@ const sendMail = async ({subject, sender, text}) => {
 
     const mailOptions = {
         from: "",
-        to: "",
-        subject: `New Email From Portfolio: ${subject}`,
+        to: `nevilleneville@hotmail.com, ${senderEmail}`,
+        subject: `This is an auto-generated email by github.io/neville-li: ${subject}`,
         html: `
-            <h1>${subject}</h1>
+            <p>Hi, ${sender}</p>
+            <p>This is a confirmation email that I have recieved your email, and I will get back to you as soon as possible</p>
+            <small>This is an This is an auto-generated email by github.io/neville-li. NO REPLY</small>
+            <small>To get in touch with me, please email me at neville.s.li@hotmail.com</small>
+            <hr>
+            <h3>Subject: ${subject}</h3>
             <p>${text}</p>
-            <small>from ${sender || "a anonymous person"}</small>
+            <small>from ${senderEmail}</small>
         `
     };
 
