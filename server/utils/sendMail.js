@@ -5,13 +5,13 @@ const sendMail = async ({subject, sender, text, senderEmail}) => {
     const transporter = nodemailer.createTransport ({
         host: "outlook.com",
         auth: {
-            user: "",
-            pass: ""
+            user: process.env.USER,
+            pass: process.env.PASS
         }
     });
 
     const mailOptions = {
-        from: "",
+        from: process.env.USER,
         to: `nevilleneville@hotmail.com, ${senderEmail}`,
         subject: `This is an auto-generated email by github.io/neville-li: ${subject}`,
         html: `

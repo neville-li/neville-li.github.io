@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(bodyParser.json());
 app.use(cors());
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 if(!process.env.NODE_ENV){
     process.env.NODE_ENV = "development";
 }
