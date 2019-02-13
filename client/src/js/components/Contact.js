@@ -11,7 +11,7 @@ const Contact = () => {
                 <form onSubmit={
                     (e) => {
                         e.preventDefault();
-                        fetch("http://127.0.0.1:3000/email", {
+                        fetch("https://neville-li-portfolio.herokuapp.com/email", {
                             method: "POST",
                             mode:"cors",
                             body: JSON.stringify({
