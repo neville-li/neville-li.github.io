@@ -8,6 +8,8 @@ const toggle = () => {
         navbar.style.display = "flex";
         navbar.style.flexDirection = "column";
         navbar.style.transform = "translateX(100%)";
+        navbar.style.bottom ="0";
+        
     
         let i = 100;
         let open = setInterval(() => {

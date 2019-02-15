@@ -1,10 +1,11 @@
 .nav {
-    border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: $lg-size;
     padding-right: $lg-size;
+    background: $main-color;
+    color: white;
     
     &__brand {
         font-size: $md-size;
@@ -15,6 +16,7 @@
 
     &__icon {
         font-size: $md-size;
+        color: white;
     }
 
     &__toggleButton,
@@ -29,15 +31,16 @@
         display: none;
         list-style: none;
         position: absolute;
-        background: white;
         right: 0;
-        transform: translateX(100%);
+        background: #edf5e1;
+        color: #888888;
+        transform: translateY(-100%);
         
         &__item {
             font-size: $sm-size;
             padding-left: 0;
-            padding: $sm-size;
-            border: 1px solid #999999;
+            padding: $sm-size $md-size;
+            border-bottom:  darken(#edf5e1, 30%) 1px solid;
         }
     }
 }
@@ -59,6 +62,8 @@
             justify-content: flex-end;
             border: none;
             margin-left: auto;
+            background: $main-color;
+            color: white;
         
             &__brand {
                 margin: $xs-size;
